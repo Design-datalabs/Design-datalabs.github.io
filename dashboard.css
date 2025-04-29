@@ -1,0 +1,404 @@
+:root {
+    --primary-color: #41766f;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-blue: #f0f7ff;
+    --border-color: #dee2e6;
+    --text-color: #495057;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Container for the entire dashboard */
+.dashboard-container {
+    padding: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Main wrapper for the left side content */
+.main-wrapper {
+    flex: 1;
+    min-width: 0; /* Prevent flex item from overflowing */
+}
+
+/* Header Styles */
+.dashboard-header {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-section {
+    flex: 1;
+}
+
+.timestamp {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+    color: #666;
+    margin: 0;
+}
+
+.header-image {
+    max-width: 200px;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    width: 100%;
+}
+
+/* Side content styles */
+.side-content {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Update Progress Section for sidebar */
+.progress-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.progress-header h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.year-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.year-selector select {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.progress-category {
+    width: 100%;
+}
+
+.category-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Finished Category */
+.finished .progress-fill {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    width: 85%;
+}
+
+/* Upcoming Category */
+.upcoming .progress-fill {
+    background: linear-gradient(to right, #2196F3, #64B5F6);
+    width: 45%;
+}
+
+/* Present Category */
+.present .progress-fill {
+    background: linear-gradient(to right, #FFC107, #FFD54F);
+    width: 65%;
+}
+
+/* Add subtle animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.progress-category:hover .progress-fill {
+    animation: pulse 1.5s infinite;
+}
+
+/* Shipment Table Section */
+.shipment-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sort-box select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+.shipment-table {
+    width: 100%;
+    min-width: 1200px; /* Ensures table maintains minimum width for scrolling */
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.shipment-table th,
+.shipment-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.shipment-table th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    position: sticky;
+    left: 0;
+}
+
+/* Custom scrollbar for better UX */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #2c4f4a;
+}
+
+.shipment-table td.clickable {
+    color: #2196F3;
+    cursor: pointer;
+}
+
+.shipment-table td.clickable:hover {
+    text-decoration: underline;
+}
+
+/* Notifications Section */
+.notifications-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.notifications-header h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.see-all {
+    color: #2196F3;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.notification-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.notification-item:hover {
+    background: #f0f0f0;
+}
+
+.notification-item i {
+    font-size: 1.5rem;
+    color: #2196F3;
+}
+
+.notification-content h3 {
+    font-size: 1rem;
+    margin: 0 0 0.25rem 0;
+}
+
+.notification-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 0.25rem 0;
+}
+
+.notification-content .time {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .side-content {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .progress-section,
+    .notifications-section {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 1rem;
+    }
+
+    .side-content {
+        flex-direction: column;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .header-image {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .notification-item {
+        flex-direction: row;
+    }
+}
+
+* {
+    box-sizing: border-box;
+} 

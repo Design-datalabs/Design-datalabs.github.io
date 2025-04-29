@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crest ERP System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+ 
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/CrestLogo.jpeg" alt="Crest Logo" height="40">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index..html">HOME</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#">EXPORT</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/ForwerdBooking.html">SEA EXPORT (Forwarding Booking)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Air Export</a></li>
+                            <li><a class="dropdown-item" href="#">Upload BL / MBL</a></li>
+                            <li><a class="dropdown-item" href="#">Daily Report</a></li>
+                            <li><a class="dropdown-item" href="#">DOC Dispatch</a></li>
+                            <li><a class="dropdown-item" href="#">DSR Export</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRANSPORT / GENERAL</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">IMPORT</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Add / Edit Job From CargoWise</a></li>
+                            <li><a class="dropdown-item" href="#">Import Search Register</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="#">Sea Import <i
+                                        class="bi bi-chevron-right ms-1"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add / Edit Job</a></li>
+                                    <li><a class="dropdown-item" href="#">MBL NO For Split HBL or LCL</a></li>
+                                    <li><a class="dropdown-item" href="#">Import General Manifest</a></li>
+                                    <li><a class="dropdown-item" href="#">Search Condition</a></li>
+                                    <li><a class="dropdown-item" href="#">Import File</a></li>
+                                    <li><a class="dropdown-item" href="#">Pre Arrival Notice</a></li>
+                                    <li><a class="dropdown-item" href="#">Arrival Notice</a></li>
+                                    <li><a class="dropdown-item" href="#">Delivery Advice</a></li>
+                                    <li><a class="dropdown-item" href="#">Import From Other CREST Company (Create Own
+                                            Job)</a></li>
+                                    <li><a class="dropdown-item" href="#">DSR IMPORT</a></li>
+                                </ul>
+                            <li><a class="dropdown-item" href="#">Air Import</a></li>
+                    </li>
+
+
+                    </li>
+                </ul>
+                </li>
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">TRANSACTIONS / ACCTS. ENTRY</a>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="#">Sale/Purchase Entry</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">DEBIT NOTE<i class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">EXPORT<i class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Overseas Agent Debit/Credit Note </a></li>
+                                        <li><a class="dropdown-item" href="#">Print Debit/Credit Note </a></li>
+                                        <li><a class="dropdown-item" href="#">Print Work Sheet </a></li>
+                                        <li><a class="dropdown-item" href="#">Crest/Overseas Bill </a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">IMPORT <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Overseas Agent Debit/Credit Note </a></li>
+                                        <li><a class="dropdown-item" href="#">Print Debit/Credit Note </a></li>
+                                        <li><a class="dropdown-item" href="#">Print Work Sheet </a></li>
+                                        <li><a class="dropdown-item" href="#">Crest/Overseas Bill </a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">CROS COUNTRY JOBS <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Overseas Agent Debit/Credit Note</a></li>
+                                        <li><a class="dropdown-item" href="#">Print Debit/Credit Note </a></li>
+                                        <li><a class="dropdown-item" href="#">Print Work Sheet </a></li>
+                                        <li><a class="dropdown-item" href="#">Crest/Overseas Bill </a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">GENERAL JOB <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Overseas Agent Debit/Credit Note </a></li>
+                                        <li><a class="dropdown-item" href="#">Print Debit/Credit Note</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">TRANSPORT JOB <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Add / Edit Job</a></li>
+                                        <li><a class="dropdown-item" href="#">MBL NO For Split HBL or LCL</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">AIR EXPORT JOB <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Overseas Agent Debit/Credit Note </a></li>
+                                        <li><a class="dropdown-item" href="#">Print Debit/Credit Note</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">AIR IMPORT JOB <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Add / Edit Job</a></li>
+                                        <li><a class="dropdown-item" href="#">MBL NO For Split HBL or LCL</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Pending Generate Bill </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">MULTIPL PURCHASE ENTRY</a></li>
+                        <li><a class="dropdown-item" href="#">MULTIPL SALE COMISSION ENTRY</a></li>
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">OPENING BALANCE <i
+                                    class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">PURCHASE BILL</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">P/L REPORT</a></li>
+
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#"> indirect Expanses<i
+                                    class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Salary Head
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Salary Entry </a></li>
+                                <li><a class="dropdown-item" href="#">Salary Payment Entry</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a class="dropdown-item" href="#">Journal ENTRY/EDIT</a></li>
+                        <li><a class="dropdown-item" href="#">BANK</a></li>
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Accounts Transfer <i
+                                    class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Bank TO Bank Transfer </a></li>
+                                <li><a class="dropdown-item" href="#">With Draw Bank TO Cash</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Staff Salary <i class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Salary head </a></li>
+                                <li><a class="dropdown-item" href="#">salary entry</a></li>
+                                <li><a class="dropdown-item" href="#">salary payment entry</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">RECEIPT <i class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Receipt Entry </a></li>
+                                <li><a class="dropdown-item" href="#">On Account Receipt</a></li>
+                                <li><a class="dropdown-item" href="#">Settlement through on Account</a></li>
+                                <li><a class="dropdown-item" href="#">IN OUT Remittance</a></li>
+                                <li><a class="dropdown-item" href="#">Work Sheet Knock Off</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">PAYMENT ENTRY <i class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">On Account Payment </a></li>
+                                <li><a class="dropdown-item" href="#">Settlement through on Account</a></li>
+                                <li><a class="dropdown-item" href="#">Rebate Payment Entry Lucid</a></li>
+
+                            </ul>
+                        </li>
+
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">ACCTS REPORTS</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <ul class="dropdown-menu">
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">REGISTER <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Sale Bill Register</a></li>
+                                        <li><a class="dropdown-item" href="#">Purchase Bill Register</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">OUTSTANDING <i
+                                            class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Sale Outstanding</a></li>
+                                        <li><a class="dropdown-item" href="#">Ageing Outstanding</a></li>
+                                        <li><a class="dropdown-item" href="#">Purchase Outstanding</a></li>
+                                        <li><a class="dropdown-item" href="#">Agent Outstanding</a></li>
+                                        <li><a class="dropdown-item" href="#">Agent Outstanding WS</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">GST <i class="bi bi-chevron-right ms-1"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">GST All Sale</a></li>
+                                        <li><a class="dropdown-item" href="#">GST All Purchase</a></li>
+                                        <li><a class="dropdown-item" href="#">3B Computation</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+
+
+
+
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">TDS <i class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sale
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Purchase</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">ADMIN REPORT <i class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Salary Head
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Salary Entry </a></li>
+                                <li><a class="dropdown-item" href="#">Salary Payment Entry</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">HBL/MBL (PREPAID COLLECT) <i
+                                    class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">HBL PREPAID MBL
+                                        COLLECT</a></li>
+                                <li><a class="dropdown-item" href="#">HBL COLLECT MBL
+                                        PREPAID</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li><a class="dropdown-item" href="#">All Accounts Register</a></li>
+                        <li><a class="dropdown-item" href="#">Tds UnderTaken Mail</a></li>
+                        <li><a class="dropdown-item" href="#">Sale Purchase Report</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">MASTER</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">CITY/BRANCH NAME</a></li>
+                        <li><a class="dropdown-item" href="#">MARKETING PERSON</a></li>
+                        <li><a class="dropdown-item" href="#">HANDLING DOCS USER</a></li>
+                        <li><a class="dropdown-item" href="#">BILL HEAD GROUP</a></li>
+                        <li><a class="dropdown-item" href="#">BILL HEAD</a></li>
+                        <li><a class="dropdown-item" href="#">Designation</a></li>
+                        <li><a class="dropdown-item" href="#">Staff</a></li>
+                        <li><a class="dropdown-item" href="#">BANK</a></li>
+                        <li><a class="dropdown-item" href="#">PORT REGION</a></li>
+                        <li><a class="dropdown-item" href="#">SEA PORT/POL</a></li>
+                        <li><a class="dropdown-item" href="#">AIR PORT/POL</a></li>
+                        <li><a class="dropdown-item" href="#">PACKAGES TYPE</a></li>
+
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">VESSEL & VOY <i class="bi bi-chevron-right ms-1"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">VESSEL</a></li>
+                                <li><a class="dropdown-item" href="#">VESSEL & VOY For
+                                        Export</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">COMMODITY</a></li>
+                        <li><a class="dropdown-item" href="#">STUFFING PLACE</a></li>
+                        <li><a class="dropdown-item" href="#">Indirect Vendor/Staff</a></li>
+                        <li><a class="dropdown-item" href="#">CONSIGNEE (BUYER)/SUPPLIER</a></li>
+                        <li><a class="dropdown-item" href="#">PickUp/Return Place</a></li>
+                    </ul>
+                </li>
+                </ul>
+
+
+                <div class="user-profile ms-auto">
+                    <img src="profile-pic.jpg" alt="User Profile" class="rounded-circle">
+                    <span>Logout</span>
+                </div>
+            </div>
+        </div>
+    </nav> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
